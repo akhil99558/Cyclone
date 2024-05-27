@@ -24,15 +24,19 @@ To run the Cyclone Intensity Prediction App locally:
 
    ```bash
    git clone https://github.com/akhil99558/Cyclone.git
-2.Navigate to the project directory and install dependencies:
+2. Navigate to the project directory and install dependencies:
 
-  '''bash
-      cd Cyclone
-      pip install -r requirements.txt
+    ```bash
+    cd Cyclone
+    pip install -r requirements.txt
+    ```
 
-3.Run the Streamlit app:
-    '''bash
-       python -m streamlit run app.py
-## NOTE: Still some issues to fix
+3. Run the Streamlit app:
 
-       
+    ```bash
+    streamlit run app.py
+    ```
+
+4. Access the application in your web browser at http://localhost:8501.
+
+   # THe App is still facing soome bugs...error:403
