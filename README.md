@@ -1,42 +1,54 @@
-# Cyclone Intensity Prediction App
+# Cyclone Detection Web App
 
-This repository contains the source code for a Streamlit web application that predicts cyclone intensity from infrared images.
+This is a web application for detecting cyclones using a deep learning model. The application is built using Flask and PyTorch.
 
-## Overview
+## Features
 
-The Cyclone Intensity Prediction App analyzes infrared images of cyclones and estimates their intensity. It leverages a pre-trained convolutional neural network (CNN) model to perform the intensity prediction.
+- Allows users to upload an image of a cyclone.
+- Utilizes a deep learning model to predict whether the uploaded image contains a cyclone.
+- Displays the prediction result on the web page.
 
-## Model Used
-
-The deep learning model used in this application is based on a SimpleCNN architecture. It consists of convolutional layers followed by max-pooling layers and fully connected layers. The model is trained on a dataset of infrared images of cyclones to predict cyclone intensity based on the extracted features.
-
-## Dataset
-
-The dataset used to train the model is obtained from Kaggle and consists of Infrared Raw Cyclone Images captured by the INSAT-3D satellite from 2013 to 2021.
-
-Dataset Source: [INSAT-3D Infrared Raw Cyclone Images (2013-2021)](https://www.kaggle.com/datasets/sshubam/insat3d-infrared-raw-cyclone-images-20132021)
-
-## Usage
-
-To run the Cyclone Intensity Prediction App locally:
+## Installation
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/akhil99558/Cyclone.git
-2. Navigate to the project directory and install dependencies:
+    ```bash
+    git clone https://github.com/akhil99558/Cyclone
+    ```
+
+2. Navigate to the project directory:
 
     ```bash
-    cd Cyclone
+    cd cyclone-detection-web-app
+    ```
+
+3. Install the required Python dependencies:
+
+    ```bash
     pip install -r requirements.txt
     ```
 
-3. Run the Streamlit app:
+4. Download the pre-trained PyTorch model and place it in the project directory.
+
+## Usage
+
+1. Start the Flask server:
 
     ```bash
-    streamlit run app.py
+    python main.py
     ```
 
-4. Access the application in your web browser at http://localhost:8501.
+2. Open a web browser and go to `http://localhost:3000`.
 
-   # THe App is still facing soome bugs...error:403
+3. Upload an image of a cyclone using the provided form.
+
+4. Wait for the prediction result to be displayed on the web page.
+
+## Model
+
+The cyclone detection model is based on a custom convolutional neural network implemented using PyTorch.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
