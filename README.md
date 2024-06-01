@@ -35,7 +35,7 @@ This is a web application for detecting cyclones using a deep learning model. Th
 1. Start the Flask server:
 
     ```bash
-    python main.py
+    python app.py
     ```
 
 2. Open a web browser and go to `http://localhost:3000`.
